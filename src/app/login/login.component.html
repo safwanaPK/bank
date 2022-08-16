@@ -1,0 +1,21 @@
+<h1 class=" text-primary">{{header}}</h1>
+
+<div class=" container text-center">
+    <div class="row mt-5">
+        <div class="col-4"></div>
+        <div class="col-4 border p-3">
+            <form action="" class="text-center mt-5 p-3">
+                <h1>Sign In</h1>
+                <!-- acno -->
+                <input (change)="acnoChange($event)" type=" text" class="form-control mt-5"
+                    [placeholder]=" accplaceholder">
+                <input (change)="pswdChange($event)" type=" text" class="form-control mt-5" placeholder="Password">
+                <input (click)="login()" type=" submit" value="log In" class="mt-3 btn btn-success">
+
+                <br>
+                <p class="mt-5">New user <a href=" ./reg.html"> Register</a></p>
+            </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
